@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>fridolin</title>
+    <link href="./js_css/bootstrap.min.css" rel="stylesheet">
+
+    <!--<link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />-->
+
+    <!--<link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">-->
+
+    <link rel="stylesheet" type="text/css" href="./js_css/style.css">
+
+
+
+    <title>Home</title>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <div class="navbar-brand">
+          <!--<img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">-->
+          <a>Fridolin</a>
+          <div class="time"></div>
+          <div class="date"></div>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+            <li class="nav-item">
+              
+              <a class="nav-link active" aria-current="page" href="http://172.27.175.35:5000/">home</a>
+              
+            </li>
+            
+            <li class="nav-item">
+              
+              <a class="nav-link" href="http://172.27.175.35:5000/create-alarm">create alarm</a>
+              
+            </li>
+            
+            <li class="nav-item">
+              
+              <a class="nav-link" href="http://172.27.175.35:5000/bubu">bubu</a>
+              
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+      
+
+    <div class="container">
+<div>
+  <h1>new alarm</h1>
+  <br>
+    <form action="/create-alarm" method="post">
+
+        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+            <input type="checkbox" class="btn-check" id="btncheck1" name="days" value="monday" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck1">Mon</label>
+          
+            <input type="checkbox" class="btn-check" id="btncheck2" name="days" value="tuesday" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck2">Tue</label>
+          
+            <input type="checkbox" class="btn-check" id="btncheck3" name="days" value="wednesday" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck3">Wed</label>
+
+            <input type="checkbox" class="btn-check" id="btncheck4" name="days" value="thursday" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck4">Thu</label>
+
+            <input type="checkbox" class="btn-check" id="btncheck5" name="days" value="friday" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck5">Fri</label>
+
+            <input type="checkbox" class="btn-check" id="btncheck6" name="days" value="saturday" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck6">Sat</label>
+
+            <input type="checkbox" class="btn-check" id="btncheck7" name="days" value="sunday" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btncheck7">Sun</label>
+        </div>
+      <br>
+      <div>
+        Select alarm time:   
+        <input type="time" name="time" id="timeselector" required="">
+      </div>
+
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" ,="" name="state" value="1" checked="checked">
+        <label class="form-check-label" for="flexSwitchCheckChecked">on/off</label>
+      </div>
+
+      <div>
+      <button class="btn btn-primary" type="submit" name="submit">create new alarm</button>
+      </div>
+    </form>
+</div>
+
+</div>
+
+    <script src="create-alarm-Dateien/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+
+       <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js" 
+            integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>-->
+
+    <script src="create-alarm-Dateien/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+    <!--
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>-->
+
+    <script type="text/javascript" src="create-alarm-Dateien/main.js"></script>
+  
+</body></html>
